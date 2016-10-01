@@ -1,0 +1,81 @@
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
+}
+
+#home {
+  background: url("pics/laptop-background.jpeg");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 1;
+}
+
+#homeButton {
+  color: white;
+  background-color: black;
+  width: 140px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 15%;
+}
+
+header, footer, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.top-bar, .menu li {
+  background-color: #34495e;
+}
+
+#main {
+  display: none;
+  opacity: 0;
+}
+
+#goals, #about, #gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: justify;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#skills {
+  text-align: justify;
+}
+
+#wrapper:hover .invisible {
+visibility: visible;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #34495e;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
