@@ -1,8 +1,9 @@
 body {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px
+  margin: 0;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #home {
@@ -35,16 +36,15 @@ header, footer, .footer {
   justify-content: space-around;
 }
 
-.top-bar, .menu li {
+.top-bar, .top-bar ul, .top-bar ul li {
   background-color: #34495e;
 }
 
 #main {
-  display: none;
   opacity: 0;
 }
 
-#goals, #about, #gallery {
+#about, #skills, #gallery {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -53,8 +53,20 @@ header, footer, .footer {
   padding-bottom: 2em;
 }
 
-#skills {
+
+#creed h2 {
+  font-size: 4.5vmin;
+}
+
+#creed {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-align: justify;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  font-size: 2.5vmin;
 }
 
 #wrapper:hover .invisible {
@@ -62,9 +74,13 @@ visibility: visible;
 }
 
 footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
   width: 100%;
   height: auto;
   background-color: #34495e;
+  font-size: 1.5vmin;
 }
 
 ul {
